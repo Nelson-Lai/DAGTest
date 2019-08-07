@@ -8,7 +8,7 @@ type Node struct {
 	value    int
 }
 
-func (n *Node) Children(children ...*Node) {
+func (n *Node) AddChildren(children ...*Node) {
 	for _, node := range children {
 		n.children = append(n.children, node)
 	}
