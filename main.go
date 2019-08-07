@@ -11,6 +11,8 @@ func main() {
 	b := node.New(2)
 	c := node.New(3)
 	a.Children(b, c)
-	fmt.Println(a, b, c)
-
+	a.PrintDepthFirst()
+	d := node.New(4)
+	b.Children(d)
+	a.PrintDepthFirst()
 }
